@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:title="@string/bottomNavigation_profile"/>
+
+    <item
+        android:id="@+id/navigation_share"
+        android:icon="@drawable/share"
+        android:title="@string/bottomNavigation_share"/>
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/map"
+        android:title="@string/bottomNavigation_map"/>
+
+    <item
+        android:id="@+id/navigation_badges"
+        android:icon="@drawable/badges_success"
+        android:title="@string/bottomNavigation_badges"/>
+
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/settings"
+        android:title="@string/bottomNavigation_settings"/>
+
+</menu>

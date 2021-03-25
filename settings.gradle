@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "DEV_MOB_Houet_Piron"

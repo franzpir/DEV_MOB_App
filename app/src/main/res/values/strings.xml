@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Nom de l'application -->
+    <string name="app_name">DEV_MOB_Houet_Piron</string>
+
+    <!-- BottomNavigation -->
+    <string name="bottomNavigation_home">Accueil</string>
+    <string name="bottomNavigation_messages">Messages</string>
+    <string name="bottomNavigation_map">Map</string>
+    <string name="bottomNavigation_settings">Paramètres</string>
+    <string name="bottomNavigation_profile">Profil</string>
+    <string name="bottomNavigation_badges">Badges</string>
+    <string name="bottomNavigation_share">Partage</string>
+
+    <!-- Dialogue lors du partage des cache -->
+    <string name="cache_download">Téléchargement des caches…</string>
+    <string name="cache_success">Succès !</string>
+
+    <!-- Page d'accueil lors de la première connexion -->
+    <string name="firstLaunch_title">Geocaching Creator</string>
+    <string name="firstLaunch_takePicture">Prendre une photo</string>
+    <string name="firstLaunch_register">S\'inscrire</string>
+    <string name="firstLaunch_avatar">Avatar</string>
+    <string name="firstLaunch_name">Nom</string>
+    <string name="firstLaunch_errorOnName">Vous êtes sûr que vous vous appelez bien comme ça ?</string>
+    <string name="firstLaunch_helloToast">Bonjour</string>
+    <string name="firstLaunch_permissionNotGrantedToast">Oups, il fallait accepter les permissions...</string>
+    <string name="firstLaunch_inscription">Inscription</string>
+
+    <!-- CameraActivity -->
+    <string name="cameraActivity_success">Photo sauvegardée !</string>
+    <string name="cameraActivity_error">Oups, il y a eu un petit soucis...</string>
+
+    <!-- ProfileFragment -->
+    <string name="profileFragment_register">Inscrit le</string>
+    <string name="profileFragment_foundedCache">Géocache trouvée</string>
+    <string name="profileFragment_foundedCaches">Géocaches trouvées</string>
+    <string name="profileFragment_zeroCachesFounded">Vous n\'avez pas encore trouvé de géocache !</string>
+
+    <!-- ParametersFragment -->
+    <string name="parametersFragment_title">Paramètres</string>
+    <string name="parametersFragment_informationsSaved">Informations sauvegardées</string>
+    <string name="parametersFragment_account">Compte</string>
+    <string name="parametersFragment_name">Nom</string>
+    <string name="parametersFragment_avatar">Avatar</string>
+    <string name="parametersFragment_takePhoto">Prendre une photo</string>
+    <string name="parametersFragment_save">Enregistrer les modifications</string>
+
+    <!-- BadgesFragment -->
+    <string name="badgesFragment_officalBadges">Badges officiels</string>
+    <string name="badgesFragment_unofficialBadges">Mes badges</string>
+    <string name="badgesFragment_add">Ajouter un badge</string>
+
+    <!-- BadgeDetails -->
+    <string name="badgeDetails_description">Description</string>
+
+    <!-- AddBadgeFragment -->
+    <string name="addBadgeFragment_error">Merci de remplir tous les champs</string>
+    <string name="addBadgeFragment_title">Ajout d\'un badge</string>
+    <string name="addBadgeFragment_name">Titre</string>
+    <string name="addBadgeFragment_description">Description</string>
+    <string name="addBadgeFragment_caches">Géocaches</string>
+    <string name="addBadgeFragment_select">Sélectionner</string>
+    <string name="addBadgeFragment_save">Sauvegarder</string>
+
+    <!-- AddCacheFragment -->
+    <string name="addCache_title">Ajout d\'une géocache</string>
+    <string name="addCache_name">Nom</string>
+    <string name="addCache_description">Description</string>
+    <string name="addCache_localisation">Localisation</string>
+    <string name="addCache_select">Sélectionner</string>
+    <string name="addCache_save">Sauvegarder</string>
+
+    <!-- ShareFragment -->
+    <string name="shareFragment_downloadTitle">Télécharger des caches/badges</string>
+    <string name="shareFragment_downloadDescription">Vous pouvez entrer ici le code de téléchargement d\'un de vos amis! Celui-ci vous permettra d\'ajouter à votre carte toutes les caches de cette personne, ainsi que tout ses badges ! Génial non?</string>
+    <string name="shareFragment_downloadHint">Entrez un code ici</string>
+    <string name="shareFragment_downloadButton">Télécharger</string>
+    <string name="shareFragment_Or">OU</string>
+    <string name="shareFragment_uploadTitle">Partager vos caches/badges</string>
+    <string name="shareFragment_uploadDescription">Vous avez ajouté quelque caches sur votre carte? Des badges peut-être? Pourquoi ne pas les partager avec vos amis? Il suffit de cliquer sur le boutton ci-dessous et de partager le code à vos amis géocacheurs !</string>
+    <string name="shareFragment_uploadButton">Générer un code</string>
+    <string name="coordinate_title">Coordonnées</string>
+    <string name="description_title">Description</string>
+    <string name="caches_to_find_title">Géocaches à trouver:</string>
+
+</resources>

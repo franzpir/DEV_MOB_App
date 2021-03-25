@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.BadgeListFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:layout_marginBottom="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/badgesFragment_officialBadges"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="20sp"
+                                            android:text="@string/badgesFragment_officalBadges"
+                                            android:layout_marginBottom="8sp"
+                                            android:layout_marginTop="10dp"
+                                            android:textColor="@color/black" android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/badgesFragment_officialBadgesRV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/badgesFragment_officialBadges"
+                            app:fastScrollEnabled="false"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:layout_marginBottom="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/badgesFragment_unofficialBadges"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="20sp"
+                                            android:text="@string/badgesFragment_unofficialBadges"
+                                            android:layout_marginBottom="8sp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_alignParentStart="true"
+                                            android:textColor="@color/black" android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/badgesFragment_unofficialBadgesRV"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            app:fastScrollEnabled="false"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="test"/>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="bottom" >
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/badge_list_add_badge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.AppCompat"
+                    android:background="@drawable/green_gradient_button"
+                    android:layout_gravity="center|bottom"
+                    android:text="@string/badgesFragment_add" />
+
+        </androidx.cardview.widget.CardView>
+
+</FrameLayout>

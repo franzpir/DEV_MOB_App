@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.ShareFragment"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/download"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/shareFragment_downloadTitle"
+                android:fontFamily="sans-serif-black"
+                android:textSize="32sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shareFragment_downloadDescription"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/code_input"
+                android:layout_height="wrap_content"
+                android:hint="@string/shareFragment_downloadHint"
+                android:inputType="textEmailAddress"
+                android:layout_width="fill_parent"
+                android:backgroundTint="#43A047"/>
+
+            <Button
+                android:id="@+id/download_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_gradient_button"
+                android:text="@string/shareFragment_downloadButton"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middle_separation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_marginVertical="10dp"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="2dp"
+                android:background="#DCDBDB"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shareFragment_Or" />
+
+            <TableRow
+                android:layout_marginVertical="10dp"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="2dp"
+                android:background="#DCDBDB" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upload"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/shareFragment_uploadTitle"
+                android:fontFamily="sans-serif-black"
+                android:textSize="32sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shareFragment_uploadDescription"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/upload_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_gradient_button"
+                android:text="@string/shareFragment_uploadButton"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

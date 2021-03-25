@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@drawable/green_gradient_angled">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="50dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/main_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstLaunch_title"
+            android:paddingHorizontal="12dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstLaunch_inscription"
+                android:paddingHorizontal="12dp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/firstLaunch_name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/firstLaunch_nameForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/firstLaunch_avatar"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="15dp"
+                    android:layout_alignParentStart="true"/>
+
+                <Button
+                    android:id="@+id/firstLaunch_takePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="@string/firstLaunch_takePicture"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/firstLaunch_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstLaunch_register"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
